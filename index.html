@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gradient picker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono:500" rel="stylesheet">
+	<link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+
+<!-- <header>
+	
+	<h1>Gradient Generator</h1>
+	<button class="menu">
+		<a href="#warm">Warm</a>
+	</button>
+	<button class="menu">
+		<a href="#cool">Cool</a>
+	</button>
+	<button class="menu">
+		<a href="#zesty">Zesty</a>
+	</button>
+
+</header> -->
+
+<main>
+		
+	<div class="warmWrapper colours clearfix" id="warmWrapper">
+		<div class="content">
+			<!-- <h2>Warm gradients generator</h2> -->
+			<button class="generateWarm" id="warmButton">Show me a warm gradient</button>
+			<section class="hexCodeBox">
+				<div class="hex warmLeft allowCopy"></div>
+				<div class="hex warmRight allowCopy"></div>
+				<!-- <button class="copyHexCodes">Copy</button> Try this after if you have time-->
+			</section>
+			<section>
+				<h3>jump to</h3>
+				<a class="scrollLink" href="#coolWrapper">Cool</a>
+				<a class="scrollLink" href="#zestyWrapper">Zesty</a>
+			</section>
+		</div>
+	</div>
+
+	<div class="coolWrapper colours clearfix" id="coolWrapper">
+		<div class="content">
+			<button class="generateCool" id="coolButton">Show me a cool gradient</button>
+			<section class="hexCodeBox">
+				<div class="hex coolLeft allowCopy"></div>
+				<div class="hex coolRight allowCopy"></div>
+				<!-- <button class="copyHexCodes">Copy</button> -->
+			</section>
+			<section>
+			<h3>jump to</h3>
+				<a class="scrollLink" href="#warmWrapper">Warm</a>
+				<a class="scrollLink" href="#zestyWrapper">Zesty</a>
+			</section>
+		</div>
+	</div>
+
+	<div class="zestyWrapper colours clearfix" id="zestyWrapper">
+		<div class="content">
+			<button class="generateZesty" id="zestyButton">Show me a zesty gradient</button>
+			<section class="hexCodeBox">
+				<div class="hex zestyLeft allowCopy"></div>
+				<div class="hex zestyRight allowCopy"></div>
+				<!-- <button class="copyHexCodes">Copy</button> -->
+			</section>
+			<section>
+				<h3>jump to</h3>
+			<a class="scrollLink" href="#warmWrapper">Warm</a>
+			<a class="scrollLink" href="#coolWrapper">Cool</a>
+			</section>
+		</div>
+	</div>
+
+
+</main>
+
+<script>
+
+// 🌈 Gradient Generator
+// User has 3 gradient options that they can generate. Palettes of: warm, cool or zesty
+// User wants to generate some warm gradients so they click on 'warm', they are 'smooth scrolled' to the warm section
+// User clicks on 'show me the gradient'
+// User sees one option and wants to see another option
+// User clicks on "show me the gradient" again to generate another random gradient
+// User likes this combination, so they copy the hex code of each colour 
+
+// 🐉 GoT Deadpool
+// User lands on a page with a form that has 45+ characters that they will vote 'dead' or 'alive' to
+// User hits submit
+// User's entries are stored somewhere and their total score is visually logged on the page. Right now, their score will be 0.
+// Administrator (me), updates the list each week with dead/alive. Users are able to come back to the page to see their total score.
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+	
+</body>
+</html>
